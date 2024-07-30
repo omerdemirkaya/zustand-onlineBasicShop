@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "brand": "Logitech",
+        "price": 25.99,
+        "src" : "./images/mouse.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Mechanical Keyboard",
+        "brand": "Corsair",
+        "price": 89.99,
+        "src" : "./images/keyboard.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "HD Monitor",
+        "brand": "Dell",
+        "price": 159.99,
+        "src" : "./images/monitor.jpg"
+    },
+    {
+        "id": 4,
+        "name": "USB-C Hub",
+        "brand": "Anker",
+        "price": 29.99,
+        "src" : "./images/usb.jpg"
+    },
+    {
+        "id": 5,
+        "name": "External Hard Drive",
+        "brand": "Seagate",
+        "price": 64.99,
+        "src" : "./images/hard-drive.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Bluetooth Headphones",
+        "brand": "Sony",
+        "price": 199.99,
+        "src" : "./images/headphone.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Portable Charger",
+        "brand": "RAVPower",
+        "price": 36.99,
+        "src" : "./images/portable-charger.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Smartphone",
+        "brand": "Samsung",
+        "price": 699.99,
+        "src" : "./images/smartphone.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Smartwatch",
+        "brand": "Apple",
+        "price": 399.99,
+        "src" : "./images/smartwatch.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Gaming Chair",
+        "brand": "Secretlab",
+        "price": 429.99,
+        "src" : "./images/chair.jpg"
+    }
+]

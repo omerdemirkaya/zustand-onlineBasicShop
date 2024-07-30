@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+  }
+  
+  .div-container {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(143, 175, 176);
+    display: flex;
+    justify-content: space-between;
+  
+    .logo {
+      img {
+        height: 10vh;
+        width: auto;
+      }
+    }
+  
+    .items {
+      border: 1px solid black;
+      width: 20%;
+      
+      ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        
+        img {
+          width: 2vh;
+          height: 2vh;
+        }
+        
+        li {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          height: 10vh;
+          align-items: center;
+          font-size: 3vh;
+          font-family: 'Courier New', Courier, monospace;
+          
+          &:hover {
+            background-color: aquamarine;
+          }
+  
+          &:hover .dropdown {
+            display: block; // Show dropdown on hover
+          }
+  
+          .dropdown {
+            display: none; // Hide by default
+            position: absolute;
+            top: 100%; // Position it directly below the list item
+            left: 0;
+            width: 100%; // Match the width of the parent list item
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            max-height: 300px; // Optional: limit height
+            overflow-y: auto; // Enable scrolling if content overflows
+            
+            .dropdown-item {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              border-bottom: 1px solid #eee;
+              
+              &:last-child {
+                border-bottom: none;
+              }
+              
+              .dropdown-item-img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                margin-right: 10px;
+              }
+              
+              .dropdown-item-info {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+              }
+              
+              .item-quantity {
+                color: #888;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .item-content {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(195, 255, 235);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    .item-card-container {
+      width: 15%;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+      .item-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+        
+        button {
+            margin-top: 20px;
+          padding: 10px;
+          border: none;
+          background-color: rgb(216, 224, 224);
+  
+          &:hover {
+            background-color: rgba(0, 0, 255, 0.5); // Use hex color with alpha value
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    /* In your SCSS file */
+.info {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .info.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .info.hide {
+    opacity: 0;
+  }
+  
+  }
+  .siparisler-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    h1{
+        text-align: center;
+    }
+    .siparisler-list-container{
+        width: 80%;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 1px solid black;
+        overflow-y: auto;
+        .siparisler-item{
+            width: 170px;
+            height: 30vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+  }
+  
